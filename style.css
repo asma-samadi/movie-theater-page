@@ -7,7 +7,7 @@ body {
 .first-page {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./images/cienamBG.jpg");
+    url("./images/TheaterBG.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -16,22 +16,23 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* vertical alignment */
-  padding: 10px 20px;
+  align-items: center;
+  padding: 10px 40px;
 }
 
 .header-logo {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 
 .navbar {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   list-style: none;
   padding: 0;
   margin: 0;
   align-items: center;
+  margin-top: -2.5rem;
 }
 
 .navbar a {
@@ -74,5 +75,45 @@ body {
 .navbar button:hover {
   background-color: #0f5fcc;
   transform: scale(1.05);
+  cursor: pointer;
+}
+
+.main-logo-h1 {
+  display: block;
+  flex-direction: column;
+  justify-self: center;
+  padding: 0;
+  margin: 0;
+}
+
+main h1 {
+  color: white;
+  margin-top: -3rem;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.main-logo {
+  display: flex;
+  justify-self: center;
+  width: 20rem;
+  margin-top: -4rem;
+}
+
+.social-logo {
+  margin: 50px;
+  gap: 10px;
+}
+
+.social-logo img {
+  width: 50px;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  margin-top: 7rem;
+}
+
+.social-logo img:hover {
+  transform: translateY(-8px) scale(1.1);
+  box-shadow: 0 0 15px #1984ff;
   cursor: pointer;
 }
