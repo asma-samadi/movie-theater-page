@@ -1,0 +1,78 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.first-page {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/cienamBG.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* vertical alignment */
+  padding: 10px 20px;
+}
+
+.header-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #d4d4d4;
+  position: relative;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #1984ff;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.navbar button {
+  font-size: 1.1rem;
+  border: none;
+  padding: 6px 12px;
+  background-color: #1984ff;
+  color: white;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.navbar button:hover {
+  background-color: #0f5fcc;
+  transform: scale(1.05);
+  cursor: pointer;
+}
