@@ -239,6 +239,38 @@ main h1 {
   border: none;
 }
 
+.about {
+  display: block;
+  text-align: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.about h2 {
+  margin-top: 80px;
+  font-size: 2.5rem;
+}
+
+.about-text {
+  margin-top: 50px;
+  font-size: 1.3rem;
+  line-height: 2;
+}
+
+.about h3 {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-size: 2rem;
+}
+
+.location-info p {
+  font-size: 1.3rem;
+}
+
+.location-info p span {
+  color: #1984ff;
+}
+
 @media (max-width: 768px) {
   .header {
     position: relative;
