@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -131,7 +135,7 @@ main h1 {
 }
 
 .hamburger span {
-  width: 28px;
+  width: 26px;
   height: 3px;
   background-color: white;
   border-radius: 2px;
@@ -141,20 +145,20 @@ main h1 {
   background-color: #1984ff;
 }
 
-.content {
+#content {
   min-height: 100vh;
   background-color: #ebebeb;
   padding: 2rem;
 }
 
-.content h2 {
+#content h2 {
   margin: 0;
   padding: 3rem 0;
   font-size: 2.5rem;
   text-align: center;
 }
 
-.content h2 span {
+#content h2 span {
   color: #0f5fcc;
 }
 
@@ -171,9 +175,8 @@ main h1 {
   border-radius: 10px;
   width: 20rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
+  box-shadow: 0.3s ease;
 }
 
 .content-image:hover {
@@ -239,14 +242,14 @@ main h1 {
   border: none;
 }
 
-.about {
+#about {
   display: block;
   text-align: center;
   flex-wrap: wrap;
   min-height: 100vh;
 }
 
-.about h2 {
+#about h2 {
   margin-top: 80px;
   font-size: 2.5rem;
 }
@@ -255,9 +258,10 @@ main h1 {
   margin-top: 50px;
   font-size: 1.3rem;
   line-height: 2;
+  padding: 0 150px;
 }
 
-.about h3 {
+#about h3 {
   margin-top: 80px;
   margin-bottom: 50px;
   font-size: 2rem;
@@ -269,6 +273,20 @@ main h1 {
 
 .location-info p span {
   color: #1984ff;
+}
+
+footer {
+  min-height: 30vh;
+  background-color: #2b3033;
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+footer p {
+  padding: 80px;
+  flex-wrap: wrap;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
