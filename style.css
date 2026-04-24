@@ -18,6 +18,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
+  position: relative;
 }
 
 .header-logo {
@@ -116,4 +117,68 @@ main h1 {
   transform: translateY(-8px) scale(1.1);
   box-shadow: 0 0 15px #1984ff;
   cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  padding: 9px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.hamburger:hover span {
+  background-color: #1984ff;
+}
+
+@media (max-width: 768px) {
+  .header {
+    position: relative;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar a {
+    font-size: 0.95rem;
+    display: block;
+  }
+
+  .hamburger:hover span {
+    background-color: #1984ff;
+  }
+
+  .header-logo {
+    width: 80px;
+    height: auto;
+  }
 }
